@@ -8,6 +8,9 @@ before_install:
   - npm install -g npm
   - npm --version
 
+install:
+  - npm install --force
+
 after_success:
   - npm run coveralls
   - npm run coverage-clean
